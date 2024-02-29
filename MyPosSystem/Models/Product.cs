@@ -6,7 +6,7 @@ namespace MyPosSystem.Models;
 [Table("product")]
 public abstract class Product
 {
-    public Guid ProductId { get; set; }
+    public int ProductId { get; set; }
     
     [Required(ErrorMessage = "Name is required")]
     [StringLength(100, ErrorMessage = "Max lenght: 100 characters")]

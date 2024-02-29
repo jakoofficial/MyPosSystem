@@ -4,7 +4,7 @@ using MyPosSystem.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.ConfigureMsSqlContext(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();

@@ -7,7 +7,7 @@ namespace MyPosSystem.Models;
 
 public class Order
 {
-    public Guid OrderId { get; set; }
+    public int OrderId { get; set; }
     
     public bool IsComplete { get; set; }
     
